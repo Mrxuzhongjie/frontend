@@ -60,3 +60,62 @@ src/
 2. 默认账号密码可配置
 3. 登录后可以访问系统管理功能
 
+## Git使用
+
+项目使用Git进行版本控制，以下是常用操作流程：
+
+### 初始化仓库与远程连接
+
+```bash
+# 初始化Git仓库
+git init
+
+# 添加远程仓库
+git remote add origin https://github.com/username/repo-name.git
+
+# 查看远程仓库信息
+git remote -v
+```
+
+### 日常代码提交流程
+
+```bash
+# 查看文件状态
+git status
+
+# 添加所有更改到暂存区
+git add .
+
+# 提交更改
+git commit -m "实现基于Vue3的权限管理系统，包含登录、状态管理和菜单功能"
+
+# 推送到远程仓库
+git push origin master
+```
+
+### 查看历史提交
+
+```bash
+# 查看提交历史
+git log --oneline -n 5
+
+# 查看特定文件的更改
+git diff --stat
+```
+
+### 分支管理
+
+```bash
+# 创建新分支
+git checkout -b feature/login
+
+# 切换分支
+git checkout master
+
+# 合并分支
+git merge feature/login
+
+# 删除分支
+git branch -d feature/login
+```
+
